@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		
+		<title>My Lightbulb</title>
+		
+		<script type="text/javascript">
+		
+		
+       var image_tracker = 'off';
+ 
+		function change(){
+	    var image = document.getElementById('light');
+		if(image_tracker=='off'){
+		image.src='on.gif';
+		image_tracker='on';
+		}
+		else{
+		image.src='off.gif';
+		image_tracker='off';
+		}
+		}
+        
+        </script>
+
+	</head>
+
+	<body style="background-color: #00FFFF">
+
+		<h1 style="font-family:calibri; text-align: center;">The lightbulb challenge</h1>
+		
+		<p style="text-align: center;"><img src="off.gif" id="light" onclick="change()"/> </p>
+		
+		
+    </body>
+</html>
