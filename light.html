@@ -3,9 +3,41 @@
 <html>
 
 	<head>
-		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").hide(1000);
+			});
+	    });
+	   </script>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
 		<title>My Lightbulb</title>
 		
+
+	</head>
+<ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="journal.html">journal</a></li>
+        <li><a class="active" href="light.html">lightbulb</a></li>
+        <li><a href="entrepreneur.html">entreprenuer</a></li>
+</ul>
+      <div><img id="one" src="one.png"></div>
+      <div><img id="wand" src="wand.png"></div>
+
+
+
+
+
+        <img src="one.png">
+        <img src="two.png">
+        <img src="wizard.png">
+        <img src="wand.png" width="20">
+	<body style="background-image: url(image5.jpg);>   
+		<h1 style="font-family:calibri; text-align: center;">The lightbulb challenge</h1>
+		
+		<p style="text-align: center;"><img src="off.gif" id="light" onclick="change()"/> </p>
+		<link rel="stylesheet" type="text/css" href="http://js.mijii.me/wand.png">
 		<script type="text/javascript">
 		
 		
@@ -24,15 +56,19 @@
 		}
         
         </script>
-
-	</head>
-
-	<body style="background-color: #00FFFF">
-
-		<h1 style="font-family:calibri; text-align: center;">The lightbulb challenge</h1>
-		
-		<p style="text-align: center;"><img src="off.gif" id="light" onclick="change()"/> </p>
-		
-		
+		}
+		<center> <img id="myImage" onmouseover="changeImage()" onmouseout="changeImage()" src="off.gif" width="130" height="170"><</center>
+        <script>
+        	function changeImage() {
+        		var image= document.getElementById('myImage') ;
+        		if (image.src.match("on")) {
+        			image.src="off.gif" ;
+        		} else {
+        			image.src="on.gif"
+        		}
+              }
+        </script>
+        <button>YES</button>
+        <p>Something I liked about camp was the activities and challenges we did. </p>
     </body>
 </html>

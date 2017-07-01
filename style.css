@@ -1,10 +1,17 @@
 p {
-	font-size: 18px;
+	font-size: 20px;
 	color: white ;
   
 
 }
-
+#one {
+    width: 20px;
+    height: 20px;
+}
+#wand {
+    width:250px; 
+    height:250px;
+}
 	
 #ad {
 	background-image: url(image5.jpg);
@@ -44,8 +51,8 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 
-#backcolor {
-  background-image: url("image3.jpg");
+#bb{
+    background-image:url(image1.jpg);
 }
 
 
