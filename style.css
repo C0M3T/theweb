@@ -55,7 +55,10 @@ li a:hover:not(.active) {
     background-image:url(image1.jpg);
 }
 
-
+img{
+    width: 200px;
+    height: 200px;
+}
 
 
 
